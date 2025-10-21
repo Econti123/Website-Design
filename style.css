@@ -14,8 +14,20 @@ body {
     font-size: 18px;
     /*seperates lines for readability*/
     line-height: 1.6;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+nav {
+    background-color: #007bff;
+
 }
  /* group selector*/
 h1,h2,h3,h4,h5,h6{
     margin-bottom: 0.5em;
+}
+
+.gecko{
+    width: 500px;
+    height: 260px;
 }

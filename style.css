@@ -1,0 +1,21 @@
+/*this is a css comment*/
+/* css reset - applied to everything*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*this block targets the <body>*/
+body {
+    background-color: #559ff4;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    /*seperates lines for readability*/
+    line-height: 1.6;
+}
+ /* group selector*/
+h1,h2,h3,h4,h5,h6{
+    margin-bottom: 0.5em;
+}

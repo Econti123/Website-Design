@@ -14,8 +14,6 @@ body {
     font-size: 18px;
     /*seperates lines for readability*/
     line-height: 1.6;
-    padding-left: 40px;
-    padding-right: 40px;
 }
 
 nav {
@@ -30,4 +28,10 @@ h1,h2,h3,h4,h5,h6{
 .gecko{
     width: 500px;
     height: 260px;
+}
+
+section{
+    background-color: rgba(255, 255, 255, .4);
+    border-style: groove;
+    
 }

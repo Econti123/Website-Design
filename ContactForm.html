@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style.css">
+
+    <title>Contact Form</title>
+</head>
+<style>
+    /* contact Form*/
+    .contact-form label{
+        display: block;
+    }
+
+    .contact-form input,
+    .contact-form textarea,
+    .contact-form select{
+        appearance: none;
+
+        border-color: var(--dark);
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 4px;
+
+        display: block;
+        width: 100%;
+    }
+
+    /* Mobile Layout*/
+    /*
+    @media (max-width: 600px){
+        .sm-grid-1col{
+            display:grid;
+            grid-template-columns: 1fr;
+        }
+    }
+    */
+</style>
+<body>
+    
+    <form action="mailto:info@gmail.com" method="post" class="contact-form">
+
+        <div>
+            <label for="input-topic">Topic:</label>
+            <select name="topic" id="input-topic" required>
+                <option value="" disabled selected>Choose a topic</option>
+                <option value="I love coffee">I love coffee</option>
+                <option value="I hate coffee">I hate coffee</option>
+            </select>
+        </div>
+
+        <div>
+        <!-- Lables can be linked to inputs using ID-->
+        <label for="input-name"> Name:</label>
+        <input type="text" name="name" id="input-name" placeholder="Jane Smith" required minlength="3">
+        </div>
+
+        <div>
+            <label for="input-email">Email:</label>
+            <input type="email" name="email" id="input-email"placeholder="me@example.com" required>
+        </div>
+
+        <div>
+            <label for="input-message">Your Message:</label>
+            <textarea name="message" id="input-message" placeholder="Your message here....." cols="30" rows="10" required minlength="20"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
